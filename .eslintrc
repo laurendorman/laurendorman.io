@@ -1,0 +1,38 @@
+{
+  "plugins": [
+    "jsx-a11y"
+  ],
+  "extends": [
+    "airbnb"
+  ],
+  "rules": {
+    "consistent-return": 0,
+    "class-methods-use-this": 0,
+    "func-names": ["error", "as-needed"],
+    "max-len": 0,
+    "no-multi-assign": 0,
+    "no-param-reassign": ["error", { "props": false }],
+    "jsx-a11y/media-has-caption": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "import/prefer-default-export": 0,
+    "react/forbid-prop-types": 0,
+    "react/jsx-filename-extension": [
+      1, {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/jsx-no-undef": [2, { "allowGlobals": true }],
+    "react/jsx-uses-react": 1,
+    "react/jsx-quotes": 0,
+    "react/no-danger": 0,
+    "react/require-default-props": 0,
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true,
+      "modules": true
+    },
+    "sourceType": "module"
+  }
+}

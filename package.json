@@ -1,0 +1,33 @@
+{
+  "name": "laurendorman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nextein",
+    "export": "nextein build && nextein export",
+    "deploy": "npm run export && cd out && now deploy && now --alias laurendorman"
+  },
+  "keywords": [],
+  "author": "Lauren Dorman",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^1.29.0",
+    "next": "^4.2.0",
+    "nextein": "^1.0.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-ga": "^2.3.5",
+    "remark": "^8.0.0",
+    "remark-react": "^4.0.1",
+    "tachyons": "^4.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}

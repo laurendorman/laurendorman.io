@@ -1,0 +1,12 @@
+const styles = {
+  wrapper: 'mw8 center',
+  link: 'near-black fw7 link no-underline bb bw1 b--orange dim',
+  navigationLink: 'near-black fw7 link no-underline',
+  unorderedList: 'list unordered-list lh-copy',
+  paragraph: 'lh-copy',
+  h1: 'f3 f2-ns',
+  h2: 'f4 f3-ns mt4 mt5-ns',
+  blockquote: 'quote b--black-30 lh-copy pl3 bl f4 o-60 mt4 mb4',
+};
+
+export { styles };
