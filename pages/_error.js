@@ -20,7 +20,7 @@ export default class Error extends Component {
     return (
       <Wrapper data={data}>
         <p>{statusCode
-        ? `An ${statusCode} error occurred.`
+        ? `A ${statusCode} error occurred.`
         : 'An error occured.'}
           <span role="img" aria-label="Dizzy Face"> 😵</span>
         </p>

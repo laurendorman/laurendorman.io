@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="stylesheet" href="/static/styles.css" />
+          <link rel="stylesheet" href="/static/css/styles.min.css" />
           <link rel="shortcut icon" href="/static/favicon.ico" />
           <meta name="description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and usable." />
           <meta property="og:type" content="website" />

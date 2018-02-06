@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { styles } from '../constants/styles';
 
 const Navigation = () => (
-  <nav className="mw8 center flex items-center mb4">
+  <nav className="mw8 center flex items-center mb5">
     <a href="/" className="white flex-grow-1 no-underline">
       <svg width="40px" height="40px" viewBox="0 0 500 500">
         <title>Lauren Dorman</title>

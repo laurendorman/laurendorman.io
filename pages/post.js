@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withPost, { Content } from 'nextein/post';
 
-import { NextLink, H1, H2, Paragraph, Script, List } from '../utils/markdownRender';
+import { NextLink, H1, H2, H3, Paragraph, Script, List } from '../utils/markdownRender';
 
 import Wrapper from '../components/Wrapper';
 import Subscribe from '../components/Subscribe';
@@ -25,6 +25,7 @@ const Post = ({ post }) => {
           a: NextLink,
           h1: H1,
           h2: H2,
+          h3: H3,
           ul: List,
           ol: props => <List {...props} ordered />,
           p: Paragraph,

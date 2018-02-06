@@ -9,6 +9,7 @@ const Footer = () => (
     <ul className="list pl0 flex mv0">
       <li className="mr2"><a href="https://github.com/laurendorman" className={`${styles.navigationLink}`}>GitHub</a></li>
       <li className="mr2"><a href="https://twitter.com/laurendorman" className={`${styles.navigationLink}`}>Twitter</a></li>
+      <li className="mr2"><a href="https://instagram.com/laurendorman" className={`${styles.navigationLink}`}>Instagram</a></li>
       <li><a href="mailto:hello@laurendorman.io" className={`${styles.navigationLink}`}>Email</a></li>
     </ul>
   </footer>

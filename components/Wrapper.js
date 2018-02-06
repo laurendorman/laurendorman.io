@@ -41,6 +41,7 @@ export default class Wrapper extends Component {
     const { data, className, children: content } = this.props;
 
     const title = data.title ? `${data.title} | Lauren Dorman` : 'Lauren Dorman';
+    const cls = className ? `${className}` : '';
     const description = data.description ? data.description : 'Placeholder description.';
 
     return (
@@ -52,7 +53,7 @@ export default class Wrapper extends Component {
         <Navigation />
         {this.renderHeader()}
         <div className="mw8 center flex">
-          <main className={`mb5 ${className}`}>
+          <main className={`mb5 w-100 ${cls}`}>
             {content}
           </main>
         </div>

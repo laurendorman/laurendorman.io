@@ -31,7 +31,7 @@ This Style Guide serves as a very opinionated and intentional guide to how I dev
     1. [Pseudo-elements and Pseudo-classes](#pseudo-elements-and-pseudo-classes)
 4. [Inspiration](#inspiration)
 
-## [HTML5](){:name='html5'}
+## <a name='doctype'>HTML5</a>
 The use of HTML5 should strictly follow the [HTML5 W3 Specifications](http://www.w3.org/TR/html5/). For browser support, use [CanIUse](http://caniuse.com/#cats=HTML5).
 
 ### <a name='doctype'>Doctype</a>

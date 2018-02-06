@@ -1,0 +1,135 @@
+/*
+
+  STYLES
+
+  Add custom styles here.
+
+*/
+
+.unordered-list li::before {
+  content: '—';
+  position: absolute;
+  margin-left: -1.75rem;
+  color: var(--silver);
+}
+
+.kanye-wtf { background: linear-gradient(140deg, #e69500, #ffe200); }
+.trillectro { background: linear-gradient(140deg, #da195b, #ff4eeb); }
+.apprentice-at { background: linear-gradient(140deg, #043743, #00b0d9); }
+.komputer-maschine { background: linear-gradient(140deg, #ff4500, #ffae00); }
+.hoist { background: linear-gradient(140deg, #033154, #0091ff); }
+.mycumortgage { background: linear-gradient(140deg, #00638b, #00eeff); }
+.style-guide { background: linear-gradient(140deg, #5B3C70, #9800ff); }
+.contact-card { background: linear-gradient(140deg, green, yellowgreen); }
+
+twitterwidget { width: 100% !important; }
+
+*, :after, :before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  color: var(--white);
+  background: var(--purple);
+}
+
+pre {
+  background: var(--near-white);
+  padding: 0.75em;
+  font-size: 1rem;
+  border-radius: .25rem;
+}
+
+.hljs {
+  line-height: 1.5;
+  overflow-x: auto;
+  color: var(--silver);
+  background: var(--near-white);
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: var(--silver);
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #333;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #008080;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #d14;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}

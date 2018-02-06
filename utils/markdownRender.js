@@ -30,6 +30,14 @@ H2.propTypes = {
   children: PropTypes.node,
 };
 
+export function H3({ children }) {
+  return <h3 className={`${styles.h3}`}>{children}</h3>;
+}
+
+H3.propTypes = {
+  children: PropTypes.node,
+};
+
 export function Paragraph({ children }) {
   return <p className={`${styles.paragraph}`}>{children}</p>;
 }

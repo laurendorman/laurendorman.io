@@ -9,9 +9,9 @@ const data = {
 const content = `
 I am a Berlin-based design-oriented Product Engineer. I spend my days at [A Color Bright](http://acolorbright.com) building products and design systems.
 
-Previously, I worked at [Cardinal Solutions](http://www.cardinalsolutions.com) where I built meaningful and engaging experiences under their UX roof &mdash; working on a wide range of projects for clients like [Highlights](http://highlights.com), [Wright-Patt](http://mycumortage.com), [Dave Thomas Foundation](https://davethomasfoundation.org), and more.
+Previously, I worked at [Cardinal Solutions](http://www.cardinalsolutions.com) where I built meaningful and engaging experiences under their UX roof working on a wide range of projects for clients like [Highlights](http://highlights.com), [Wright-Patt](http://mycumortage.com), [Dave Thomas Foundation](https://davethomasfoundation.org), and more.
 
-Prior to that, I was an Apprentice at [Sparkbox](http://seesparkbox.com) where I learned about the best practices of building for the web from some of the best minds in the industry. And before that, I worked at a small SaaS startup + studio in Chicago where I wore many hats 🎩✨ working on client sites, designs, wireframes &mdash; you name it.
+Prior to that, I was an Apprentice at [Sparkbox](http://seesparkbox.com) where I learned about the best practices of building for the web from some of the best minds in the industry. And in the land before time, I worked at a small SaaS startup + studio in Chicago where I wore many hats 🎩✨ working on client sites, designs, wireframes &mdash; you name it.
 
 ## Speaking
 
