@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import ReactGA from 'react-ga';
 import Head from 'next/head';
+import FontsLoaded from '../utils/fonts';
 
 import Navigation from './Navigation';
 import Footer from './Footer';
@@ -12,6 +13,7 @@ import { formatDate } from '../utils/date';
 export default class Wrapper extends Component {
   componentDidMount() {
     ReactGA.initialize('UA-63186272-1');
+    FontsLoaded();
   }
 
   renderDate() {
