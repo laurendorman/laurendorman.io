@@ -1,7 +1,13 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
+import FontFaceObserver from 'fontfaceobserver';
 
 export default class MyDocument extends Document {
+  constructor() {
+    super();
+    this.state = { isLoading: true };
+  }
+
   static getInitialProps({ renderPage }) {
     const {
       html, head, errorHtml, chunks,
@@ -11,7 +17,18 @@ export default class MyDocument extends Document {
     };
   }
 
+  componentDidMount() {
+    Promise.all([new FontFaceObserver('Apercu').load()])
+      .then(() => { this.setState({ isLoading: false }); })
+      .catch((error) => {
+        console.error('Failed to load fonts!', error);
+        this.setState({ isLoading: false });
+      });
+  }
+
   render() {
+    const { isLoading } = this.state;
+    const fontsLoaded = isLoading ? 'apercu' : '';
     return (
       <html lang="en">
         <Head>
@@ -41,7 +58,7 @@ export default class MyDocument extends Document {
           <meta name="msapplication-TileImage" content="/static/mstile-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
-        <body className="apercu sans-serif near-black f5 f4-ns">
+        <body className={`${fontsLoaded} sans-serif near-black f5 f4-ns`}>
           <Main />
           <NextScript />
         </body>

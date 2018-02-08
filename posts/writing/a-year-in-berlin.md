@@ -1,6 +1,6 @@
 ---
 title: A Year in Berlin
-date: 2018-02-06
+date: 2018-02-08
 category: writing
 tags: [personal]
 ---
