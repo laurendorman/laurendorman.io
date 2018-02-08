@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import withPost, { Content } from 'nextein/post';
+import RemarkLowlight from 'remark-react-lowlight';
+import js from 'highlight.js/lib/languages/javascript';
+import scss from 'highlight.js/lib/languages/scss';
+import xml from 'highlight.js/lib/languages/xml';
 
 import { NextLink, H1, H2, H3, Paragraph, Script, List } from '../utils/markdownRender';
 
@@ -30,6 +34,11 @@ const Post = ({ post }) => {
           ol: props => <List {...props} ordered />,
           p: Paragraph,
           script: Script,
+          code: RemarkLowlight({
+            js,
+            scss,
+            xml
+          }),
         }}
         />
       </section>

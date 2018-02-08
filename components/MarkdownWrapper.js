@@ -5,7 +5,7 @@ import reactRenderer from 'remark-react';
 import RemarkLowlight from 'remark-react-lowlight';
 import js from 'highlight.js/lib/languages/javascript';
 import scss from 'highlight.js/lib/languages/scss';
-import html from 'highlight.js/lib/languages/html';
+import xml from 'highlight.js/lib/languages/xml';
 
 import { NextLink, H1, H2, H3, List, Paragraph, Script } from '../utils/markdownRender';
 
@@ -25,7 +25,7 @@ const remarkOpts = {
     code: RemarkLowlight({
       js,
       scss,
-      html
+      xml
     }),
   },
 };
