@@ -13,6 +13,9 @@ import { formatDate } from '../utils/date';
 export default class Wrapper extends Component {
   componentDidMount() {
     ReactGA.initialize('UA-63186272-1');
+    if (window.sessionStorage.criticalFoftFontsLoaded) {
+      document.body.classList.add('apercu')
+    }
     FontsLoaded();
   }
 

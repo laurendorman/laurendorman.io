@@ -1,10 +1,12 @@
 import FontFaceObserver from 'fontfaceobserver';
 
 const FontsLoaded = () => {
-  const Apercu = new FontFaceObserver('Apercu');
-
-  Apercu.load().then(() => {
-    document.body.classList.add('apercu');
+  Promise.all([
+    new FontFaceObserver('Apercu', { weight: 400 }).load(),
+    new FontFaceObserver('Apercu', { weight: 700 }).load(),
+  ]).then(() => {
+    document.body.classList.add('apercu')
+    window.sessionStorage.criticalFontsLoaded = true;
   });
 };
 
