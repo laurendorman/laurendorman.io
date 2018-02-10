@@ -1,5 +1,5 @@
 import React from 'react';
-import MarkdownWrapper from '../components/MarkdownWrapper';
+import Markdown from '../components/Markdown';
 
 const data = {
   title: 'About',
@@ -23,6 +23,7 @@ Prior to that, I was an Apprentice at [Sparkbox](http://seesparkbox.com) where I
 
 ## Elsewhere
 
+* [Feature](https://medium.com/glitch/we-the-people-using-glitch-for-activism-da84c1e41027) by Glitch
 * [How we used Slack as a backend](https://medium.com/a-color-bright/how-we-used-slack-as-a-backend-4e794f19c3f2) on Medium
 * [Interview](https://revisionpath.com/lauren-dorman/) with Revision Path
 * [Interview](http://ohio-streets.com/2015/07/09/meet-the-designer-behind-hoist-and-oatws-collaboration-lauren-dorman-2/) with Ohio Streets
@@ -33,4 +34,4 @@ Prior to that, I was an Apprentice at [Sparkbox](http://seesparkbox.com) where I
 ## Get in touch
 If you would like me to speak at your conference, meetup or just want to chat — please [email me](mailto:hello@laurendorman.io) or [send me a note on Twitter](https://twitter.com/laurendorman).`;
 
-export default () => <MarkdownWrapper data={data} className="measure-wide">{content}</MarkdownWrapper>;
+export default () => <Markdown data={data} className="measure-wide">{content}</Markdown>;
