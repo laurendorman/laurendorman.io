@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
           <meta name="twitter:card" content="summary" />
           <meta name="twitter:title" content="Lauren Dorman" />
           <meta name="twitter:description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and accessible." />
-          <meta name="twitter:image" content="/static/twitter_summary_card@2x.png" />
+          <meta name="twitter:image" content="https://laurendorman.io/static/twitter_summary_card@2x.png" />
           <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
           <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/static/apple-touch-icon-57x57.png" />
@@ -38,7 +38,7 @@ export default class MyDocument extends Document {
           <meta name="apple-mobile-web-app-title" content="Lauren Dorman" />
           <meta name="application-name" content="Lauren Dorman" />
           <meta name="msapplication-TileColor" content="#5b3c70" />
-          <meta name="msapplication-TileImage" content="/static/mstile-144x144.png" />
+          <meta name="msapplication-TileImage" content="https://laurendorman.io/static/mstile-144x144.png" />
           <meta name="theme-color" content="#ffffff" />
         </Head>
         <body className="sans-serif near-black f5 f4-ns">
