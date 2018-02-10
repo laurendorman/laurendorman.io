@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nextein && npm run build watch",
     "export": "nextein build && nextein export",
-    "deploy": "npm run export && cd out && now deploy && now --alias laurendorman",
+    "deploy": "npx now alias --token=NOW_TOKEN $(npx now ./out --static --no-clipboard --token=NOW_TOKEN --public) laurendorman.io",
     "mutations": "immutable-css src/tachyons.css --strict",
     "build": "npm run build:css && npm run build:minify",
     "build:css": "tachyons src/tachyons.css > static/css/styles.css",
