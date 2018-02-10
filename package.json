@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nextein && npm run build watch",
+    "dev": "nextein && npm run build:watch",
     "export": "nextein build && nextein export",
     "deploy": "npx now alias --token=$NOW_TOKEN $(npx now ./out --static --no-clipboard --token=$NOW_TOKEN --public) laurendorman.io",
     "mutations": "immutable-css src/tachyons.css --strict",
