@@ -89,7 +89,7 @@ List.defaultProps = {
 
 export function LI({ children }) {
   return (
-    <li className="mv2">
+    <li className="mb1">
       {children}
     </li>
   );
