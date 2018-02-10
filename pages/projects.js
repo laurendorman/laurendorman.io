@@ -22,7 +22,7 @@ const Projects = ({ posts }) => {
           <div key={`work-${post.data.name}`} className="pv2 pa2-ns w-100 w-50-ns">
             <a href={isCaseStudyLink} className="no-underline white">
               <div className={`white br2 shadow-4 grow pa3 pa4-ns h-100 ${post.data.class}`}>
-                <h1 className="b f4"><span role="img" aria-label={post.data.emoji_name}>{post.data.emoji}</span> {post.data.title}</h1>
+                <h1 className="f4 mt0 fw7"><span role="img" aria-label={post.data.emoji_name}>{post.data.emoji}</span> {post.data.title}</h1>
                 <p>{post.data.description}</p>
                 <p className="">{post.data.role}</p>
                 <span className="bg-white-30 pv1 ph2 f7 f6-ns br-pill b">
