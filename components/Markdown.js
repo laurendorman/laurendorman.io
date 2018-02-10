@@ -25,21 +25,21 @@ const remarkOpts = {
     code: RemarkLowlight({
       js,
       scss,
-      xml
+      xml,
     }),
   },
 };
 
-const MarkdownWrapper = ({ className, data, children: content }) => (
+const Markdown = ({ className, data, children: content }) => (
   <Wrapper data={data} className={className}>
     {remark().use(reactRenderer, remarkOpts).processSync(content).contents}
   </Wrapper>
 );
 
-MarkdownWrapper.propTypes = {
+Markdown.propTypes = {
   className: PropTypes.string,
   data: PropTypes.object,
   children: PropTypes.string,
 };
 
-export default MarkdownWrapper;
+export default Markdown;
