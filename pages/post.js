@@ -6,7 +6,7 @@ import js from 'highlight.js/lib/languages/javascript';
 import scss from 'highlight.js/lib/languages/scss';
 import xml from 'highlight.js/lib/languages/xml';
 
-import { NextLink, H1, H2, H3, Paragraph, Script, List } from '../utils/markdownRender';
+import { NextLink, H1, H2, H3, Paragraph, Script, List, LI } from '../utils/markdownRender';
 
 import Wrapper from '../components/Wrapper';
 import Subscribe from '../components/Subscribe';
@@ -32,12 +32,13 @@ const Post = ({ post }) => {
           h3: H3,
           ul: List,
           ol: props => <List {...props} ordered />,
+          li: LI,
           p: Paragraph,
           script: Script,
           code: RemarkLowlight({
             js,
             scss,
-            xml
+            xml,
           }),
         }}
         />

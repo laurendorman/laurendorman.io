@@ -86,3 +86,15 @@ List.propTypes = {
 List.defaultProps = {
   ordered: false,
 };
+
+export function LI({ children }) {
+  return (
+    <li className="mv2">
+      {children}
+    </li>
+  );
+}
+
+LI.propTypes = {
+  children: PropTypes.node,
+};

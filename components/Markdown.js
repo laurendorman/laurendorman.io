@@ -7,7 +7,7 @@ import js from 'highlight.js/lib/languages/javascript';
 import scss from 'highlight.js/lib/languages/scss';
 import xml from 'highlight.js/lib/languages/xml';
 
-import { NextLink, H1, H2, H3, List, Paragraph, Script } from '../utils/markdownRender';
+import { NextLink, H1, H2, H3, List, LI, Paragraph, Script } from '../utils/markdownRender';
 
 import Wrapper from './Wrapper';
 
@@ -20,6 +20,7 @@ const remarkOpts = {
     h3: H3,
     ul: List,
     ol: props => <List {...props} ordered />,
+    li: LI,
     p: Paragraph,
     script: Script,
     code: RemarkLowlight({
