@@ -17,19 +17,18 @@ This Style Guide serves as a very opinionated and intentional guide to how I dev
     1. [Writing HTML Syntax](#writing-html-syntax)
     1. [Spacing](#spacing)
     1. [URLs](#urls)
-2. [Sass](#sass)
+1. [Sass](#sass)
     1. [Variables](#variables)
     1. [Functions](#functions)
     1. [Mixins](#mixins)
     1. [Nesting](#nesting)
     1. [Class Names](#class-names)
-3. [CSS](#css)
+1. [CSS](#css)
     1. [Writing CSS Syntax](#writing-css-syntax)
     1. [Properties and Values](#properties-and-values)
     1. [Browser Prefixes](#browser-prefixes)
     1. [Selectors](#selectors)
     1. [Pseudo-elements](#pseudo-elements)
-4. [Inspiration](#inspiration)
 
 ## HTML5
 The use of HTML5 should strictly follow the [HTML5 W3 Specifications](http://www.w3.org/TR/html5/). For browser support, use [CanIUse](http://caniuse.com/#cats=HTML5).
