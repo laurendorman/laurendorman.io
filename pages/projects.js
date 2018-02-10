@@ -36,7 +36,7 @@ const Projects = ({ posts }) => {
         <div key="contact" className="pv2 pa2-ns w-100 w-50-ns">
           <a href="mailto:hello@laurendorman.io" className="no-underline">
             <div className="white br2 shadow-4 grow pa3 pa4-ns h-100 contact-card">
-              <h1 className="b f4"><span role="img" aria-label="Smiling Face With Smiling Eyes">😊</span> Want to work together?</h1>
+              <h1 className="f4 mt0 fw7"><span role="img" aria-label="Smiling Face With Smiling Eyes">😊</span> Want to work together?</h1>
               <p>I am available for small-to-mid size projects that are the right fit.</p>
               <p>Sound good?</p>
               <span className="bg-white-30 pv1 ph2 f7 f6-ns br-pill b">
