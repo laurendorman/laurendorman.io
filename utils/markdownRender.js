@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -12,30 +14,43 @@ NextLink.propTypes = {
   children: PropTypes.node,
   href: PropTypes.string,
   as: PropTypes.string,
+  name: PropTypes.string,
 };
 
-export function H1({ children }) {
-  return <h1 className={`${styles.h1}`}>{children}</h1>;
+export function H1({ children, id }) {
+  if (!id) {
+    id = children[0].toLowerCase().split(' ').join('-');
+  }
+  return <h1 className={`${styles.h1}`}><a className="near-black no-underline" href={`#${id}`} id={id}>{children}</a></h1>;
 }
 
 H1.propTypes = {
   children: PropTypes.node,
+  id: PropTypes.string,
 };
 
-export function H2({ children }) {
-  return <h2 className={`${styles.h2}`}>{children}</h2>;
+export function H2({ children, id }) {
+  if (!id) {
+    id = children[0].toLowerCase().split(' ').join('-');
+  }
+  return <h2 className={`${styles.h2}`}><a className="near-black no-underline" href={`#${id}`} id={id}>{children}</a></h2>;
 }
 
 H2.propTypes = {
   children: PropTypes.node,
+  id: PropTypes.string,
 };
 
-export function H3({ children }) {
-  return <h3 className={`${styles.h3}`}>{children}</h3>;
+export function H3({ children, id }) {
+  if (!id) {
+    id = children[0].toLowerCase().split(' ').join('-');
+  }
+  return <h3 className={`${styles.h3}`}><a className="near-black no-underline" href={`#${id}`} id={id}>{children}</a></h3>;
 }
 
 H3.propTypes = {
   children: PropTypes.node,
+  id: PropTypes.string,
 };
 
 export function Paragraph({ children }) {
