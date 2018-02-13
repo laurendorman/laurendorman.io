@@ -5,7 +5,7 @@ import { styles } from '../constants/styles';
 
 const Navigation = () => (
   <nav className="mw8 center flex items-center mb5">
-    <Link prefetch href="/">
+    <Link href="/">
       <a href="/" className="white flex-grow-1 no-underline">
         <svg width="40px" height="40px" viewBox="0 0 500 500">
           <title>Lauren Dorman</title>
@@ -21,9 +21,9 @@ const Navigation = () => (
       </a>
     </Link>
     <ul className="list pl0 flex mv0">
-      <li className="mr2 mr4-ns"><Link prefetch href="/writing"><a href="/writing" className={`${styles.navigationLink}`}>Writing</a></Link></li>
-      <li className="mr2 mr4-ns"><Link prefetch href="/projects"><a href="/projects" className={`${styles.navigationLink}`}>Projects</a></Link></li>
-      <li><Link prefetch href="/about"><a href="/about" className={`${styles.navigationLink}`}>About</a></Link></li>
+      <li className="mr2 mr4-ns"><Link href="/writing"><a href="/writing" className={`${styles.navigationLink}`}>Writing</a></Link></li>
+      <li className="mr2 mr4-ns"><Link href="/projects"><a href="/projects" className={`${styles.navigationLink}`}>Projects</a></Link></li>
+      <li><a href="/about" className={`${styles.navigationLink}`}>About</a></li>
     </ul>
   </nav>
 );
