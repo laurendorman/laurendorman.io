@@ -1,4 +1,5 @@
 import React from 'react';
+import withPosts from 'nextein/posts';
 import Markdown from '../components/Markdown';
 
 const data = {
@@ -33,4 +34,4 @@ I am using a Universal SSL in order to improve my [visibility](http://www.forbes
 ### Analytics
 This site uses [Google Analytics](http://www.google.com/analytics/) to track page visits and nothing more.`;
 
-export default () => <Markdown data={data}>{content}</Markdown>;
+export default withPosts(() => <Markdown data={data}>{content}</Markdown>);

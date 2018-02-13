@@ -1,4 +1,5 @@
 import React from 'react';
+import withPosts from 'nextein/posts';
 import Markdown from '../components/Markdown';
 
 const data = {
@@ -204,4 +205,4 @@ h1::after {
 This document is inspired by my personal writing style, [Code Guide by @mdo](http://codeguide.co/), [Google's Styleguide](https://github.com/google/styleguide), and [CSS Guidelines](http://cssguidelin.es/).
 `;
 
-export default () => <Markdown data={data}>{content}</Markdown>;
+export default withPosts(() => <Markdown data={data}>{content}</Markdown>);
