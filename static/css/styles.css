@@ -1939,7 +1939,7 @@ img { max-width: 100%; }
   Add custom styles here.
 
 */
-.unordered-list li::before { content: '—'; position: absolute; margin-left: -1.75rem; color: #999; }
+.unordered-list li::before { content: '—'; position: absolute; margin-left: -1.75rem; color: #555; }
 .kanye-wtf { background: linear-gradient( 140deg, #e69500, #ffe200 ); }
 .trillectro { background: linear-gradient( 140deg, #da195b, #ff4eeb ); }
 .apprentice-at { background: linear-gradient( 140deg, #043743, #00b0d9 ); }

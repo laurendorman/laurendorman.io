@@ -22,7 +22,7 @@ export default class Wrapper extends Component {
   renderDate() {
     if (this.props.data.date) {
       return (
-        <time className="light-silver ttu f6 f5-ns">{formatDate(this.props.data.date)}</time>
+        <time className="mid-gray ttu f6 f5-ns">{formatDate(this.props.data.date)}</time>
       );
     }
     return null;

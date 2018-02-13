@@ -10,7 +10,7 @@
   content: '—';
   position: absolute;
   margin-left: -1.75rem;
-  color: var(--silver);
+  color: var(--mid-gray);
 }
 
 .kanye-wtf { background: linear-gradient(140deg, #e69500, #ffe200); }
