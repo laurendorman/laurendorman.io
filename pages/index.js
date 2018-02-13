@@ -16,7 +16,7 @@ const Index = ({ posts }) => {
   return (
     <Wrapper data={data} className="measure-wide">
       <section>
-        <p className={`${styles.paragraph}`}>I&apos;m <span className="fw7">Lauren Dorman</span>, a Berlin-based design-oriented Product Engineer. I spend my days at <a href="http://acolorbright" title="A Color Bright" className={`${styles.link}`}>A Color Bright</a> building products and design systems.</p>
+        <p className={`${styles.paragraph}`}>I&apos;m <span className="fw7">Lauren Dorman</span>, a Berlin-based design-oriented Product Engineer. I spend my days at <a href="http://acolorbright.com" title="A Color Bright" className={`${styles.link}`}>A Color Bright</a> building products and design systems.</p>
 
         <p className={`${styles.paragraph}`}>I enjoy making things that are modular, reuseable, and equipped with subtle animations and exciting color palettes <span role="img" aria-label="Artist Palette">🎨</span>. I strive to make the web both beautiful and accessible. I am most happy when solving problems and facing new challenges.</p>
 
