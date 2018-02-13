@@ -1,5 +1,4 @@
 import React from 'react';
-import withPosts from 'nextein/posts';
 import Markdown from '../components/Markdown';
 
 const data = {
@@ -36,4 +35,4 @@ Prior to that, I was an Apprentice at [Sparkbox](http://seesparkbox.com) where I
 If you would like me to speak at your conference, meetup or just want to chat — please [email me](mailto:hello@laurendorman.io) or [send me a note on Twitter](https://twitter.com/laurendorman).`;
 
 
-export default withPosts(() => <Markdown data={data} className="measure-wide">{content}</Markdown>);
+export default () => <Markdown data={data} className="measure-wide">{content}</Markdown>;
