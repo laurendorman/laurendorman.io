@@ -224,86 +224,10 @@ html, body, div, article, section, main, footer, header, form, fieldset, legend,
 pre, code, a, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, textarea, table,
 td, th, tr, input[type="email"], input[type="number"], input[type="password"],
 input[type="tel"], input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
-/*
-
-   ASPECT RATIOS
-
-*/
-/* This is for fluid media that is embedded from third party sites like youtube, vimeo etc.
- * Wrap the outer element in aspect-ratio and then extend it with the desired ratio i.e
- * Make sure there are no height and width attributes on the embedded media.
- * Adapted from: https://github.com/suitcss/components-flex-embed
- *
- * Example:
- *
- * <div class="aspect-ratio aspect-ratio--16x9">
- *  <iframe class="aspect-ratio--object"></iframe>
- * </div>
- *
- * */
-.aspect-ratio { height: 0; position: relative; }
-.aspect-ratio--16x9 { padding-bottom: 56.25%; }
-.aspect-ratio--9x16 { padding-bottom: 177.77%; }
-.aspect-ratio--4x3 { padding-bottom: 75%; }
-.aspect-ratio--3x4 { padding-bottom: 133.33%; }
-.aspect-ratio--6x4 { padding-bottom: 66.6%; }
-.aspect-ratio--4x6 { padding-bottom: 150%; }
-.aspect-ratio--8x5 { padding-bottom: 62.5%; }
-.aspect-ratio--5x8 { padding-bottom: 160%; }
-.aspect-ratio--7x5 { padding-bottom: 71.42%; }
-.aspect-ratio--5x7 { padding-bottom: 140%; }
-.aspect-ratio--1x1 { padding-bottom: 100%; }
-.aspect-ratio--object { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
-/*
-
-   IMAGES
-   Docs: http://tachyons.io/docs/elements/images/
-
-*/
-/* Responsive images! */
-img { max-width: 100%; }
-/*
-
-   BACKGROUND SIZE
-   Docs: http://tachyons.io/docs/themes/background-size/
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-/*
-  Often used in combination with background image set as an inline style
-  on an html element.
-*/
-.cover { background-size: cover !important; }
-.contain { background-size: contain !important; }
-/*
-
-    BACKGROUND POSITION
-
-    Base:
-    bg = background
-
-    Modifiers:
-    -center = center center
-    -top = top center
-    -right = center right
-    -bottom = bottom center
-    -left = center left
-
-    Media Query Extensions:
-      -ns = not-small
-      -m  = medium
-      -l  = large
-
- */
-.bg-center { background-repeat: no-repeat; background-position: center center; }
-.bg-top { background-repeat: no-repeat; background-position: top center; }
-.bg-right { background-repeat: no-repeat; background-position: center right; }
-.bg-bottom { background-repeat: no-repeat; background-position: bottom center; }
-.bg-left { background-repeat: no-repeat; background-position: center left; }
+/* @import './_aspect-ratios'; */
+/* @import './_images'; */
+/* @import './_background-size'; */
+/* @import './_background-position'; */
 /*
 
    OUTLINES
@@ -543,68 +467,8 @@ img { max-width: 100%; }
 
 */
 .pre, pre { overflow-x: auto; overflow-y: hidden; overflow: scroll; }
-/*
-
-   COORDINATES
-   Docs: http://tachyons.io/docs/layout/position/
-
-   Use in combination with the position module.
-
-   Base:
-     top
-     bottom
-     right
-     left
-
-   Modifiers:
-     -0  = literal value 0
-     -1  = literal value 1
-     -2  = literal value 2
-     --1 = literal value -1
-     --2 = literal value -2
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.top-0 { top: 0; }
-.right-0 { right: 0; }
-.bottom-0 { bottom: 0; }
-.left-0 { left: 0; }
-.top-1 { top: 1rem; }
-.right-1 { right: 1rem; }
-.bottom-1 { bottom: 1rem; }
-.left-1 { left: 1rem; }
-.top-2 { top: 2rem; }
-.right-2 { right: 2rem; }
-.bottom-2 { bottom: 2rem; }
-.left-2 { left: 2rem; }
-.top--1 { top: -1rem; }
-.right--1 { right: -1rem; }
-.bottom--1 { bottom: -1rem; }
-.left--1 { left: -1rem; }
-.top--2 { top: -2rem; }
-.right--2 { right: -2rem; }
-.bottom--2 { bottom: -2rem; }
-.left--2 { left: -2rem; }
-.absolute--fill { top: 0; right: 0; bottom: 0; left: 0; }
-/*
-
-   CLEARFIX
-   http://tachyons.io/docs/layout/clearfix/
-
-*/
-/* Nicolas Gallaghers Clearfix solution
-   Ref: http://nicolasgallagher.com/micro-clearfix-hack/ */
-.cf:before, .cf:after { content: " "; display: table; }
-.cf:after { clear: both; }
-.cf { *zoom: 1; }
-.cl { clear: left; }
-.cr { clear: right; }
-.cb { clear: both; }
-.cn { clear: none; }
+/* @import './_coordinates'; */
+/* @import './_clears'; */
 /*
 
    DISPLAY
@@ -704,34 +568,7 @@ img { max-width: 100%; }
 .flex-grow-1 { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
 .flex-shrink-0 { -ms-flex-negative: 0; flex-shrink: 0; }
 .flex-shrink-1 { -ms-flex-negative: 1; flex-shrink: 1; }
-/*
-
-   FLOATS
-   http://tachyons.io/docs/layout/floats/
-
-   1. Floated elements are automatically rendered as block level elements.
-      Setting floats to display inline will fix the double margin bug in
-      ie6. You know... just in case.
-
-   2. Don't forget to clearfix your floats with .cf
-
-   Base:
-     f = float
-
-   Modifiers:
-     l = left
-     r = right
-     n = none
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
-*/
-.fl { float: left; _display: inline; }
-.fr { float: right; _display: inline; }
-.fn { float: none; }
+/* @import './_floats'; */
 /*
 
    FONT FAMILY GROUPS
@@ -853,13 +690,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .fw7 { font-weight: 700; }
 .fw8 { font-weight: 800; }
 .fw9 { font-weight: 900; }
-/*
-
-   FORMS
-   
-*/
-.input-reset { -webkit-appearance: none; -moz-appearance: none; }
-.button-reset::-moz-focus-inner, .input-reset::-moz-focus-inner { border: 0; padding: 0; }
+/* @import './_forms'; */
 /*
 
    HEIGHTS
@@ -1978,26 +1809,6 @@ pre { background: #f4f4f4; padding: .75em; font-size: 1rem; border-radius: .25re
 /* Uncomment out the line below to help debug layout issues */
 /* @import './_debug'; */
 @media screen and (min-width: 30em) {
- .aspect-ratio-ns { height: 0; position: relative; }
- .aspect-ratio--16x9-ns { padding-bottom: 56.25%; }
- .aspect-ratio--9x16-ns { padding-bottom: 177.77%; }
- .aspect-ratio--4x3-ns { padding-bottom: 75%; }
- .aspect-ratio--3x4-ns { padding-bottom: 133.33%; }
- .aspect-ratio--6x4-ns { padding-bottom: 66.6%; }
- .aspect-ratio--4x6-ns { padding-bottom: 150%; }
- .aspect-ratio--8x5-ns { padding-bottom: 62.5%; }
- .aspect-ratio--5x8-ns { padding-bottom: 160%; }
- .aspect-ratio--7x5-ns { padding-bottom: 71.42%; }
- .aspect-ratio--5x7-ns { padding-bottom: 140%; }
- .aspect-ratio--1x1-ns { padding-bottom: 100%; }
- .aspect-ratio--object-ns { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
- .cover-ns { background-size: cover !important; }
- .contain-ns { background-size: contain !important; }
- .bg-center-ns { background-repeat: no-repeat; background-position: center center; }
- .bg-top-ns { background-repeat: no-repeat; background-position: top center; }
- .bg-right-ns { background-repeat: no-repeat; background-position: center right; }
- .bg-bottom-ns { background-repeat: no-repeat; background-position: bottom center; }
- .bg-left-ns { background-repeat: no-repeat; background-position: center left; }
  .outline-ns { outline: 1px solid; }
  .outline-transparent-ns { outline: 1px solid transparent; }
  .outline-0-ns { outline: 0; }
@@ -2037,31 +1848,6 @@ pre { background: #f4f4f4; padding: .75em; font-size: 1rem; border-radius: .25re
  .shadow-3-ns { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, .2 ); }
  .shadow-4-ns { box-shadow: 2px 2px 8px 0 rgba( 0, 0, 0, .2 ); }
  .shadow-5-ns { box-shadow: 4px 4px 8px 0 rgba( 0, 0, 0, .2 ); }
- .top-0-ns { top: 0; }
- .left-0-ns { left: 0; }
- .right-0-ns { right: 0; }
- .bottom-0-ns { bottom: 0; }
- .top-1-ns { top: 1rem; }
- .left-1-ns { left: 1rem; }
- .right-1-ns { right: 1rem; }
- .bottom-1-ns { bottom: 1rem; }
- .top-2-ns { top: 2rem; }
- .left-2-ns { left: 2rem; }
- .right-2-ns { right: 2rem; }
- .bottom-2-ns { bottom: 2rem; }
- .top--1-ns { top: -1rem; }
- .right--1-ns { right: -1rem; }
- .bottom--1-ns { bottom: -1rem; }
- .left--1-ns { left: -1rem; }
- .top--2-ns { top: -2rem; }
- .right--2-ns { right: -2rem; }
- .bottom--2-ns { bottom: -2rem; }
- .left--2-ns { left: -2rem; }
- .absolute--fill-ns { top: 0; right: 0; bottom: 0; left: 0; }
- .cl-ns { clear: left; }
- .cr-ns { clear: right; }
- .cb-ns { clear: both; }
- .cn-ns { clear: none; }
  .dn-ns { display: none; }
  .di-ns { display: inline; }
  .db-ns { display: block; }
@@ -2120,9 +1906,6 @@ pre { background: #f4f4f4; padding: .75em; font-size: 1rem; border-radius: .25re
  .flex-grow-1-ns { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
  .flex-shrink-0-ns { -ms-flex-negative: 0; flex-shrink: 0; }
  .flex-shrink-1-ns { -ms-flex-negative: 1; flex-shrink: 1; }
- .fl-ns { float: left; display: inline; }
- .fr-ns { float: right; display: inline; }
- .fn-ns { float: none; }
  .i-ns { font-style: italic; }
  .fs-normal-ns { font-style: normal; }
  .normal-ns { font-weight: normal; }
@@ -2397,26 +2180,6 @@ pre { background: #f4f4f4; padding: .75em; font-size: 1rem; border-radius: .25re
  .v-btm-ns { vertical-align: bottom; }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
- .aspect-ratio-m { height: 0; position: relative; }
- .aspect-ratio--16x9-m { padding-bottom: 56.25%; }
- .aspect-ratio--9x16-m { padding-bottom: 177.77%; }
- .aspect-ratio--4x3-m { padding-bottom: 75%; }
- .aspect-ratio--3x4-m { padding-bottom: 133.33%; }
- .aspect-ratio--6x4-m { padding-bottom: 66.6%; }
- .aspect-ratio--4x6-m { padding-bottom: 150%; }
- .aspect-ratio--8x5-m { padding-bottom: 62.5%; }
- .aspect-ratio--5x8-m { padding-bottom: 160%; }
- .aspect-ratio--7x5-m { padding-bottom: 71.42%; }
- .aspect-ratio--5x7-m { padding-bottom: 140%; }
- .aspect-ratio--1x1-m { padding-bottom: 100%; }
- .aspect-ratio--object-m { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
- .cover-m { background-size: cover !important; }
- .contain-m { background-size: contain !important; }
- .bg-center-m { background-repeat: no-repeat; background-position: center center; }
- .bg-top-m { background-repeat: no-repeat; background-position: top center; }
- .bg-right-m { background-repeat: no-repeat; background-position: center right; }
- .bg-bottom-m { background-repeat: no-repeat; background-position: bottom center; }
- .bg-left-m { background-repeat: no-repeat; background-position: center left; }
  .outline-m { outline: 1px solid; }
  .outline-transparent-m { outline: 1px solid transparent; }
  .outline-0-m { outline: 0; }
@@ -2456,31 +2219,6 @@ pre { background: #f4f4f4; padding: .75em; font-size: 1rem; border-radius: .25re
  .shadow-3-m { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, .2 ); }
  .shadow-4-m { box-shadow: 2px 2px 8px 0 rgba( 0, 0, 0, .2 ); }
  .shadow-5-m { box-shadow: 4px 4px 8px 0 rgba( 0, 0, 0, .2 ); }
- .top-0-m { top: 0; }
- .left-0-m { left: 0; }
- .right-0-m { right: 0; }
- .bottom-0-m { bottom: 0; }
- .top-1-m { top: 1rem; }
- .left-1-m { left: 1rem; }
- .right-1-m { right: 1rem; }
- .bottom-1-m { bottom: 1rem; }
- .top-2-m { top: 2rem; }
- .left-2-m { left: 2rem; }
- .right-2-m { right: 2rem; }
- .bottom-2-m { bottom: 2rem; }
- .top--1-m { top: -1rem; }
- .right--1-m { right: -1rem; }
- .bottom--1-m { bottom: -1rem; }
- .left--1-m { left: -1rem; }
- .top--2-m { top: -2rem; }
- .right--2-m { right: -2rem; }
- .bottom--2-m { bottom: -2rem; }
- .left--2-m { left: -2rem; }
- .absolute--fill-m { top: 0; right: 0; bottom: 0; left: 0; }
- .cl-m { clear: left; }
- .cr-m { clear: right; }
- .cb-m { clear: both; }
- .cn-m { clear: none; }
  .dn-m { display: none; }
  .di-m { display: inline; }
  .db-m { display: block; }
@@ -2539,9 +2277,6 @@ pre { background: #f4f4f4; padding: .75em; font-size: 1rem; border-radius: .25re
  .flex-grow-1-m { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
  .flex-shrink-0-m { -ms-flex-negative: 0; flex-shrink: 0; }
  .flex-shrink-1-m { -ms-flex-negative: 1; flex-shrink: 1; }
- .fl-m { float: left; display: inline; }
- .fr-m { float: right; display: inline; }
- .fn-m { float: none; }
  .i-m { font-style: italic; }
  .fs-normal-m { font-style: normal; }
  .normal-m { font-weight: normal; }
@@ -2816,26 +2551,6 @@ pre { background: #f4f4f4; padding: .75em; font-size: 1rem; border-radius: .25re
  .v-btm-m { vertical-align: bottom; }
 }
 @media screen and (min-width: 60em) {
- .aspect-ratio-l { height: 0; position: relative; }
- .aspect-ratio--16x9-l { padding-bottom: 56.25%; }
- .aspect-ratio--9x16-l { padding-bottom: 177.77%; }
- .aspect-ratio--4x3-l { padding-bottom: 75%; }
- .aspect-ratio--3x4-l { padding-bottom: 133.33%; }
- .aspect-ratio--6x4-l { padding-bottom: 66.6%; }
- .aspect-ratio--4x6-l { padding-bottom: 150%; }
- .aspect-ratio--8x5-l { padding-bottom: 62.5%; }
- .aspect-ratio--5x8-l { padding-bottom: 160%; }
- .aspect-ratio--7x5-l { padding-bottom: 71.42%; }
- .aspect-ratio--5x7-l { padding-bottom: 140%; }
- .aspect-ratio--1x1-l { padding-bottom: 100%; }
- .aspect-ratio--object-l { position: absolute; top: 0; right: 0; bottom: 0; left: 0; width: 100%; height: 100%; z-index: 100; }
- .cover-l { background-size: cover !important; }
- .contain-l { background-size: contain !important; }
- .bg-center-l { background-repeat: no-repeat; background-position: center center; }
- .bg-top-l { background-repeat: no-repeat; background-position: top center; }
- .bg-right-l { background-repeat: no-repeat; background-position: center right; }
- .bg-bottom-l { background-repeat: no-repeat; background-position: bottom center; }
- .bg-left-l { background-repeat: no-repeat; background-position: center left; }
  .outline-l { outline: 1px solid; }
  .outline-transparent-l { outline: 1px solid transparent; }
  .outline-0-l { outline: 0; }
@@ -2875,31 +2590,6 @@ pre { background: #f4f4f4; padding: .75em; font-size: 1rem; border-radius: .25re
  .shadow-3-l { box-shadow: 2px 2px 4px 2px rgba( 0, 0, 0, .2 ); }
  .shadow-4-l { box-shadow: 2px 2px 8px 0 rgba( 0, 0, 0, .2 ); }
  .shadow-5-l { box-shadow: 4px 4px 8px 0 rgba( 0, 0, 0, .2 ); }
- .top-0-l { top: 0; }
- .left-0-l { left: 0; }
- .right-0-l { right: 0; }
- .bottom-0-l { bottom: 0; }
- .top-1-l { top: 1rem; }
- .left-1-l { left: 1rem; }
- .right-1-l { right: 1rem; }
- .bottom-1-l { bottom: 1rem; }
- .top-2-l { top: 2rem; }
- .left-2-l { left: 2rem; }
- .right-2-l { right: 2rem; }
- .bottom-2-l { bottom: 2rem; }
- .top--1-l { top: -1rem; }
- .right--1-l { right: -1rem; }
- .bottom--1-l { bottom: -1rem; }
- .left--1-l { left: -1rem; }
- .top--2-l { top: -2rem; }
- .right--2-l { right: -2rem; }
- .bottom--2-l { bottom: -2rem; }
- .left--2-l { left: -2rem; }
- .absolute--fill-l { top: 0; right: 0; bottom: 0; left: 0; }
- .cl-l { clear: left; }
- .cr-l { clear: right; }
- .cb-l { clear: both; }
- .cn-l { clear: none; }
  .dn-l { display: none; }
  .di-l { display: inline; }
  .db-l { display: block; }
@@ -2958,9 +2648,6 @@ pre { background: #f4f4f4; padding: .75em; font-size: 1rem; border-radius: .25re
  .flex-grow-1-l { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
  .flex-shrink-0-l { -ms-flex-negative: 0; flex-shrink: 0; }
  .flex-shrink-1-l { -ms-flex-negative: 1; flex-shrink: 1; }
- .fl-l { float: left; display: inline; }
- .fr-l { float: right; display: inline; }
- .fn-l { float: none; }
  .i-l { font-style: italic; }
  .fs-normal-l { font-style: normal; }
  .normal-l { font-weight: normal; }
