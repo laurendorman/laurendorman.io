@@ -18,7 +18,6 @@
   "license": "MIT",
   "dependencies": {
     "date-fns": "^1.29.0",
-    "fontfaceobserver": "^2.0.13",
     "highlight.js": "^9.12.0",
     "next": "^4.2.3",
     "nextein": "^1.2.0",

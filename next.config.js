@@ -10,4 +10,6 @@ module.exports = config({
     '/work': { page: '/projects' },
     '/writing': { page: '/writing' },
   }),
+  poweredByHeader: false,
+  maxAge: '30 days',
 });

@@ -1,83 +1,4 @@
 /*! TACHYONS CUSTOM v4.9.4 | http://tachyons.io */
-/* Custom fonts */
-/*
-
-   FONT FAMILY GROUPS
-   Docs: http://tachyons.io/docs/typography/font-family/
-
-*/
-.sans-serif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
-/* .serif {
-  font-family: var(--serif);
-}
-
-.system-sans-serif {
-  font-family: sans-serif;
-}
-
-.system-serif {
-  font-family: serif;
-} */
-/* Monospaced Typefaces (for code) */
-/* From http://cssfontstack.com */
-code, .code { font-family: Consolas, monaco, monospace; }
-/* .courier {
-  font-family: 'Courier Next',
-               courier,
-               monospace;
-} */
-/* Sans-Serif Typefaces */
-/* .helvetica {
-  font-family: 'helvetica neue', helvetica,
-               sans-serif;
-}
-
-.avenir {
-  font-family: 'avenir next', avenir,
-               sans-serif;
-} */
-/* Serif Typefaces */
-/* .athelas {
-  font-family: athelas,
-               georgia,
-               serif;
-}
-
-.georgia {
-  font-family: georgia,
-               serif;
-}
-
-.times {
-  font-family: times,
-               serif;
-}
-
-.bodoni {
-  font-family: "Bodoni MT",
-                serif;
-}
-
-.calisto {
-  font-family: "Calisto MT",
-                serif;
-}
-
-.garamond {
-  font-family: garamond,
-               serif;
-}
-
-.baskerville {
-  font-family: baskerville,
-               serif;
-} */
-/* For FontFaceObserver fallback support */
-@font-face { font-family: 'Apercu'; src: url( './fonts/Apercu-Regular.eot' ); src: url( './fonts/Apercu-Regular.eot?#iefix' ) format( 'embedded-opentype' ), url( './fonts/Apercu-Regular.woff2' ) format( 'woff2' ), url( './fonts/Apercu-Regular.woff' ) format( 'woff' ), url( './fonts/Apercu-Regular.ttf' ) format( 'truetype' ), url( './fonts/Apercu-Regular.svg#Apercu-Regular' ) format( 'svg' ); font-weight: 400; font-style: normal; }
-@font-face { font-family: 'Apercu'; src: url( './fonts/Apercu-Italic.eot' ); src: url( './fonts/Apercu-Italic.eot?#iefix' ) format( 'embedded-opentype' ), url( './fonts/Apercu-Italic.woff2' ) format( 'woff2' ), url( './fonts/Apercu-Italic.woff' ) format( 'woff' ), url( './fonts/Apercu-Italic.ttf' ) format( 'truetype' ), url( './fonts/Apercu-Italic.svg#Apercu-Italic' ) format( 'svg' ); font-weight: 400; font-style: italic; }
-@font-face { font-family: 'Apercu'; src: url( './fonts/Apercu-Bold.eot' ); src: url( './fonts/Apercu-Bold.eot?#iefix' ) format( 'embedded-opentype' ), url( './fonts/Apercu-Bold.woff2' ) format( 'woff2' ), url( './fonts/Apercu-Bold.woff' ) format( 'woff' ), url( './fonts/Apercu-Bold.ttf' ) format( 'truetype' ), url( './fonts/Apercu-Bold.svg#Apercu-Bold' ) format( 'svg' ); font-weight: 700; font-style: normal; }
-@font-face { font-family: 'Apercu'; src: url( './fonts/Apercu-BoldItalic.eot' ); src: url( './fonts/Apercu-BoldItalic.eot?#iefix' ) format( 'embedded-opentype' ), url( './fonts/Apercu-BoldItalic.woff2' ) format( 'woff2' ), url( './fonts/Apercu-BoldItalic.woff' ) format( 'woff' ), url( './fonts/Apercu-BoldItalic.ttf' ) format( 'truetype' ), url( './fonts/Apercu-BoldItalic.svg#Apercu-BoldItalic' ) format( 'svg' ); font-weight: 700; font-style: italic; }
-.apercu { font-family: Apercu, -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
 /* External Library Includes */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -811,6 +732,78 @@ img { max-width: 100%; }
 .fl { float: left; _display: inline; }
 .fr { float: right; _display: inline; }
 .fn { float: none; }
+/*
+
+   FONT FAMILY GROUPS
+   Docs: http://tachyons.io/docs/typography/font-family/
+
+*/
+.sans-serif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
+/* .serif {
+  font-family: var(--serif);
+}
+
+.system-sans-serif {
+  font-family: sans-serif;
+}
+
+.system-serif {
+  font-family: serif;
+} */
+/* Monospaced Typefaces (for code) */
+/* From http://cssfontstack.com */
+code, .code { font-family: Consolas, monaco, monospace; }
+/* .courier {
+  font-family: 'Courier Next',
+               courier,
+               monospace;
+} */
+/* Sans-Serif Typefaces */
+/* .helvetica {
+  font-family: 'helvetica neue', helvetica,
+               sans-serif;
+}
+
+.avenir {
+  font-family: 'avenir next', avenir,
+               sans-serif;
+} */
+/* Serif Typefaces */
+/* .athelas {
+  font-family: athelas,
+               georgia,
+               serif;
+}
+
+.georgia {
+  font-family: georgia,
+               serif;
+}
+
+.times {
+  font-family: times,
+               serif;
+}
+
+.bodoni {
+  font-family: "Bodoni MT",
+                serif;
+}
+
+.calisto {
+  font-family: "Calisto MT",
+                serif;
+}
+
+.garamond {
+  font-family: garamond,
+               serif;
+}
+
+.baskerville {
+  font-family: baskerville,
+               serif;
+} */
 /*
 
    FONT STYLE

@@ -15,7 +15,7 @@ const content = `
 This site uses a customized version of [Tachyons](https://tachyons.io) – which allowed me to iterate through design decisions quickly while giving my site a personal touch.
 
 ### Typography
-The primary typeface used on this site is Apercu by Colophon Foundry. For ~<code>~ I am using Monospace. Fallback fonts for Apercu include a beautiful font stack system default sans-serif.
+The primary typeface used on this site is using the system default sans-serif. For ~<code>~ I am using Monospace.
 
 ## Development
 

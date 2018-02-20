@@ -1,9 +1,5 @@
 /*! TACHYONS CUSTOM v4.9.4 | http://tachyons.io */
 
-/* Custom fonts */
-@import './_font-family'; /* For FontFaceObserver fallback support */
-@import './_fonts';
-
  /* External Library Includes */
  @import './_normalize';
 
@@ -26,6 +22,7 @@
  @import './_display';
  @import './_flexbox';
  @import './_floats';
+ @import './_font-family';
  @import './_font-style';
  @import './_font-weight';
  @import './_forms';
