@@ -40,6 +40,7 @@
     "normalize.css": "^8.0.0",
     "tachyons-cli": "^1.2.0",
     "tachyons-modules": "^1.1.10",
-    "watch": "^1.0.2"
+    "watch": "^1.0.2",
+    "webpack": "^3.11.0"
   }
 }
