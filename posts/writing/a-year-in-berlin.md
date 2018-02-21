@@ -44,7 +44,7 @@ I was interviewed by Maurice Cherry for [Episode #193](https://revisionpath.com/
 
 ### I started a newsletter.
 
-Last year I started a tiny newsletter named LAP &mdash; short for Letters from Across the Pond &mdash; which has since been renamed and was put on a short hiatus. I renamed the newsletter because LAP no longer resonated with me. I went on a vision quest to rename my newsletter and settled on **Hurdle**. My vision is for Hurdle to be a mid-week pick me up that celebrates small wins and discoveries through introspect. Hurdle will start rolling out next week. [Subscribe now](https://buttondown.email/laurendorman) so that you don’t miss the first issue under the new format.
+Last year I started a tiny newsletter named LAP &mdash; short for Letters from Across the Pond &mdash; which has since been renamed and was put on a short hiatus. I renamed the newsletter because LAP no longer resonated with me. I went on a vision quest to rename my newsletter and settled on **Hurdle**. My vision is for Hurdle to be a mid-week pick me up that celebrates small wins and discoveries through introspect. Hurdle will start rolling out next week. [Subscribe now](https://buttondown.email/laurendorman) so that you don’t miss the first issue under the new format. 😊
 
 ### I became more active.
 
