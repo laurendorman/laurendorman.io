@@ -19,15 +19,10 @@ export default class MyDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="stylesheet" href="/static/css/styles.min.css" />
           <link rel="shortcut icon" href="/static/favicon.ico" />
-          <meta name="description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and usable." />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Lauren Dorman" />
           <meta property="og:url" content="https://laurendorman.io/" />
           <meta property="og:site_name" content="Lauren Dorman" />
-          <meta property="og:description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and accessible." />
           <meta name="twitter:card" content="summary" />
-          <meta name="twitter:title" content="Lauren Dorman" />
-          <meta name="twitter:description" content="I&apos;m a designer and front-end developer who is passionate about making the web both beautiful and accessible." />
           <meta name="twitter:image" content="https://laurendorman.io/static/twitter_summary_card@2x.png" />
           <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
           <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />

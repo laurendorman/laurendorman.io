@@ -1,5 +1,6 @@
 ---
 title: A Year in Berlin
+description: 2017 was a year of challenges and triumphs.
 date: 2018-02-21
 category: writing
 tags: [personal]

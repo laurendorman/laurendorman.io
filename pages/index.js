@@ -11,6 +11,7 @@ const Index = ({ posts }) => {
 
   const data = {
     header: 'Thoughtful human being, making the web a better place.',
+    description: 'Designer and developer who values human connection.',
   };
 
   return (

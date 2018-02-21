@@ -40,15 +40,19 @@ export default class Wrapper extends Component {
   render() {
     const { data, className, children: content } = this.props;
 
-    const title = data.title ? `${data.title} | Lauren Dorman` : 'Lauren Dorman';
+    const title = data.title ? `${data.title}` : 'Lauren Dorman';
     const cls = className ? `${className}` : '';
-    const description = data.description ? data.description : 'Placeholder description.';
+    const description = data.description ? data.description : 'Designer and developer who values human connection.';
 
     return (
       <div className="ma3 ma4-l">
         <Head>
-          <meta name="description" content={description} />
           <title>{title}</title>
+          <meta name="description" content={description} />
+          <meta property="og:title" content="Lauren Dorman" />
+          <meta property="og:description" content={description} />
+          <meta name="twitter:title" content={title} />
+          <meta name="twitter:description" content={description} />
         </Head>
         <Navigation />
         {this.renderHeader()}
