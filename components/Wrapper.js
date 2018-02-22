@@ -1,19 +1,25 @@
+/* eslint-disable no-undef */
+
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import ReactGA from 'react-ga';
 import Head from 'next/head';
+
 
 import Navigation from './Navigation';
 import Footer from './Footer';
 
-import { styles } from '../constants/styles';
+import { initGA, logPageView } from '../utils/analytics';
 import { formatDate } from '../utils/date';
+import { styles } from '../constants/styles';
 
 export default class Wrapper extends Component {
   componentDidMount() {
-    ReactGA.initialize('UA-63186272-1');
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
   }
-
   renderDate() {
     if (this.props.data.date) {
       return (
@@ -62,6 +68,15 @@ export default class Wrapper extends Component {
           </main>
         </div>
         <Footer />
+        <script dangerouslySetInnerHTML={{
+          __html: `(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+         ga('create', 'UA-63186272-1', 'auto');
+         ga('send', 'pageview');`,
+        }}
+        />
       </div>
     );
   }
