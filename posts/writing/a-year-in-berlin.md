@@ -36,7 +36,7 @@ I traveled to San Francisco, Santa Clara, San Jose, Toledo, Detroit, Chicago, Bo
 
 ### I spoke at two conferences.
 
-I gave my first-ever long-form talk at **CONFRONT** in Malmö and a small lightening talk on Tachyons at **CSSConf EU** here in Berlin. I’ve found that no matter how many dry runs I go through, I will always be a nervous wreck once I first arrive on stage. Luckily, after the first couple of minutes pass, I find my comfort zone and stop tripping over words. **CONFRONT** was an amazing experience and my talk was very well-received which has encouraged me to keep on this path. 🤞🏽
+I gave my first-ever long-form talk at **CONFRONT** in Malmö and a small lightening talk on Tachyons at **CSSConf EU** here in Berlin. I’ve found that no matter how many dry runs I go through, I will always be a nervous wreck when I first arrive on stage. Luckily, after the first couple of minutes pass, I find my comfort zone and stop tripping over words. **CONFRONT** was an amazing experience and my talk was very well-received which has encouraged me to keep on this path. 🤞🏽
 
 ### I had a guest appearance on a podcast.
 
