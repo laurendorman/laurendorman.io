@@ -41,6 +41,6 @@
     "tachyons-cli": "^1.2.0",
     "tachyons-modules": "^1.1.10",
     "watch": "^1.0.2",
-    "webpack": "^3.11.0"
+    "webpack": "^4.0.1"
   }
 }
