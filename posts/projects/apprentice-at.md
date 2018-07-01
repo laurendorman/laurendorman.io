@@ -15,4 +15,6 @@ class: apprentice-at
 
 Our goal was to provide a central location to find apprenticeship programs. With Apprentice.at you can learn about the companies, their programs, and how to apply. We also provided information about what apprenticeships are and why they're beneficial to both parties.
 
-Learn more about the project, read what we wrote about it here or click the link below.
+Learn more about the project, read what we wrote about it [here](https://seesparkbox.com/foundry/the_making_of_apprentice.at) or follow the link below to view the project.
+
+<a href="https://apprentice.at" alt="Apprentice.at" class="btn btn--default">View project &#8594;</a>
