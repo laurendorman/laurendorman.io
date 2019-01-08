@@ -5,7 +5,7 @@ category: projects
 case_study: true
 emoji: ⚡️
 emoji_name: High Voltage
-description: Through multiple genres of music, Trillectro is the sweet spot where cultures converge.
+description: A website for Trillectro, a music festival where cultures converge.
 role: Development, Design
 class: trillectro
 ---

@@ -6,7 +6,7 @@ case_study: false
 project_link: 'http://www.mycumortgage.com/'
 emoji: 🏠
 emoji_name: House
-description: "Development for Wright-Patt's myCUmortage credit union mortgage financing."
+description: "A website for Wright-Patt's myCUmortage, a credit union offering mortgage financing."
 role: Development
 class: mycumortgage
 ---

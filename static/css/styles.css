@@ -1764,6 +1764,8 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 */
 .unordered-list li::before { content: '—'; position: absolute; margin-left: -1.75rem; color: #555; }
+.collective-gallery { background: linear-gradient( 140deg, #00a092, #abd8cc ); }
+.mark-gierl { background: linear-gradient( 140deg, #a27efd, #d8c9fe ); }
 .kanye-wtf { background: linear-gradient( 140deg, #e69500, #ffe200 ); }
 .trillectro { background: linear-gradient( 140deg, #da195b, #ff4eeb ); }
 .apprentice-at { background: linear-gradient( 140deg, #043743, #00b0d9 ); }
